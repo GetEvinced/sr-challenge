@@ -1,13 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './index.css';
-import App from './App';
+import Home from './pages/home';
+import {ChallengeOne, ChallengeTwo, ChallengeThree} from './pages/challenges';
 import reportWebVitals from './reportWebVitals';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/button-semantics",
+    element: <ChallengeOne />,
+  }
+  ,
+  {
+    path: "/stevie-song",
+    element: <ChallengeTwo />,
+  },
+  {
+    path: "/identify-violations",
+    element: <ChallengeThree />,
+  },
+  // {
+  //   path: "/challenge-three",
+  //   element: <ChallengeFour />,
+  // },
+  // {
+  //   path: "/challenge-three",
+  //   element: <ChallengeFive />,
+  // }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
