@@ -47,9 +47,9 @@ function Home() {
             <li>
               <a target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.nvaccess.org/files/nvdaTracAttachments/455/keycommands%20with%20laptop%20keyboard%20layout.html"
+                href="https://support.apple.com/en-il/guide/voiceover/cpvokys01/mac"
               >
-                NVDA command key quick reference
+                VoiceOver general commands on Mac
               </a>
             </li>
           </ul>
