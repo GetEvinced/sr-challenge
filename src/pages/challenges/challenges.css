@@ -9,6 +9,16 @@
 	width: 100%;
 	min-height: 100vh;
 	padding: 4em;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.home li {
+	margin-bottom: 0.8rem;
+}
+
+.home h1 {
+	line-height: 2.8rem;
 }
 
 .home > * {

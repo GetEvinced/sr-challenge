@@ -33,7 +33,7 @@ function ChallengeThree() {
             setMessage('You are WCAG ninja! Please wait for five seconds and you\'ll be moved to the next challenge');
 
             setTimeout(() => {
-                return navigate("/challenge-two");
+                return navigate("/find-information");
             }, 5000);
         } else {
             setMessage('You got wrong answer. Please try again.');
@@ -94,7 +94,7 @@ function ChallengeThree() {
                         <input type="radio" name="answers" value="two" aria-label="Eleven WCAG violations" />
                         <input type="radio" name="answers" value="three" aria-label="No WCAG violations" />
                         <input type="radio" name="answers" value="four" aria-label="Five WCAG violations" />
-                        <input type="radio" name="answers" value="five" aria-label="There are so many that I can\'t count them" />
+                        <input type="radio" name="answers" value="five" aria-label="There are so many that I can't count them" />
                         <br />
                         <button onClick={(e) => checkAnswers(e)} type="button">
                             Submit your answer

@@ -30,7 +30,7 @@ function ChallengeTwo() {
             setMessage('That\'s correct. You rock! Please wait for five seconds and you\'ll be moved to the next challenge');
 
             setTimeout(() => {
-                return navigate("/challenge-three");
+                return navigate("/identify-violations");
             }, 5000);
         }
         
@@ -40,7 +40,7 @@ function ChallengeTwo() {
         <div className="App">
             <div className="screener" aria-hidden="true">
                 <img src={logo} className="App-logo" />
-                Challenge II <br />Which Stevie Wonder song?
+                <h1>Challenge II <br />Which Stevie Wonder song?</h1>
             </div>
             <Status msg={status} />
             <h1>Which Stevie Wonder song?</h1>

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import './index.css';
 import Home from './pages/home';
-import {ChallengeOne, ChallengeTwo, ChallengeThree} from './pages/challenges';
+import {ChallengeOne, ChallengeTwo, ChallengeThree, ChallengeFour, ChallengeFive, End} from './pages/challenges';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -27,14 +27,18 @@ const router = createBrowserRouter([
     path: "/identify-violations",
     element: <ChallengeThree />,
   },
-  // {
-  //   path: "/challenge-three",
-  //   element: <ChallengeFour />,
-  // },
-  // {
-  //   path: "/challenge-three",
-  //   element: <ChallengeFive />,
-  // }
+  {
+    path: "/find-information",
+    element: <ChallengeFour />,
+  },
+  {
+    path: "/fill-forms",
+    element: <ChallengeFive />,
+  },
+  {
+    path: "/end",
+    element: <End />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
